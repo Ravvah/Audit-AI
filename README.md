@@ -24,9 +24,8 @@ AuditAI/
 ├── api/            # FastAPI service and Pydantic schemas
 ├── audit_core/     # back-end for metrics, detection, middleware
 ├── dashboard/      # Streamlit app and style components
-├── common/         # Shared utilities
 ├── setup.py        # Editable package install
-├── Dockerfile.*    # Docker definitions for API and Dashboard
+├── Dockerfile    # Docker definitions for API and Dashboard
 └── Makefile        # Build, run, and test targets
 ```
 
@@ -36,7 +35,7 @@ AuditAI/
 
 1. **Clone the repository**
    ```powershell
-   git clone https://github.com/<your-username>/Audit-AI.git
+   git clone https://github.com/Ravvah/Audit-AI.git
    cd Audit-AI
    ```
 2. **Install Ollama** (if not already installed)
@@ -109,7 +108,7 @@ AuditAI/
 
 ## Metrics & Experimental Status
 
-AuditAI’s metrics (latency, token counts, hallucination, drift, etc.) are experimental and designed for rapid iteration. See `METRICS.md` for details, limitations, and guidance on extending or tuning the observability stack for your production needs.
+AuditAI’s metrics (latency, token counts, hallucination, drift, etc.) are experimental and designed for rapid iteration. See `METRICS.md` for details, limitations, and guidance on extending or tuning the observability stack.
 
 ---
 
