@@ -1,0 +1,98 @@
+##### AI-generated file #####
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+coverage/
+test-output/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Data pipelines specific
+data/
+*.log
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Documentation
+docs/_build/
+
+# Sphinx documentation
+docs/build/
+
+# Virtualenv
+.venv/
+/auditai/
+/src
+
+
+# Cache
+__pycache__/
+*.pyc
+.cache/
+*.pyo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

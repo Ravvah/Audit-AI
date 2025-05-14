@@ -1,0 +1,41 @@
+# filepath: c:\Users\RAR9\Projets\Audit-AI\requirements.txt
+# API Framework
+fastapi>=0.104.0,<0.110.0
+uvicorn[standard]>=0.22.0,<0.30.0
+pydantic>=2.4.0,<3.0.0
+pydantic-settings>=2.0.0
+
+# HTTP Client
+requests>=2.31.0,<3.0.0
+
+# Data Processing & Analysis
+numpy>=1.24.0,<2.0.0
+pandas>=2.0.0,<3.0.0
+scipy>=1.10.0,<2.0.0
+scikit-learn>=1.2.0,<2.0.0
+
+# NLP and ML Tools
+sentence-transformers>=2.2.2,<2.3.0  # Older version with pre-built wheels
+transformers>=4.35.0,<5.0.0
+torch>=2.0.0,<3.0.0  # needed for sentence-transformers embeddings
+huggingface-hub>=0.13.0,<0.18.0  # ensure cached_download is available for sentence-transformers
+
+# Visualization - simplified
+streamlit>=1.26.0,<2.0.0
+plotly>=5.17.0,<6.0.0
+matplotlib>=3.7.0,<4.0.0
+
+# Testing & Quality
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Monitoring & Observability - simplified
+prometheus-client>=0.17.0
+
+# Utilities - essential only
+python-dotenv>=1.0.0
+tqdm>=4.65.0
+psutil>=5.9.0
+
+# Transformer and embeddings
+

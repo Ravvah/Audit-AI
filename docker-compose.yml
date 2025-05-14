@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: auditai_ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    entrypoint: ["ollama", "serve"]
+    ports:
+      - "11434:11434"
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: auditai_api
+    depends_on:
+      - ollama
+    environment:
+      SERVICE_MODE: "api"
+      METRICS_STORAGE_PATH: "/app/data/metrics"
+      OLLAMA_BASE_URL: "http://ollama:11434"
+    volumes:
+      - metrics_data:/app/data
+    ports:
+      - "8000:8000"
+      
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: auditai_dashboard
+    depends_on:
+      - api
+    environment:
+      SERVICE_MODE: "dashboard"
+      METRICS_STORAGE_PATH: "/app/data/metrics"
+    volumes:
+      - metrics_data:/app/data
+    ports:
+      - "8501:8501"
+
+volumes:
+  ollama_data:
+  metrics_data:
