@@ -91,8 +91,13 @@ AuditAI/
    ```
 2. Start API and Dashboard in separate terminals:
    ```powershell
-   $Env:SERVICE_MODE = 'api'; bash .\entrypoint.sh
-   $Env:SERVICE_MODE = 'dashboard'; bash .\entrypoint.sh
+   $Env:SERVICE_MODE = 'api'; 
+   bash .\entrypoint.sh
+   ```
+
+   ```powershell
+   $Env:SERVICE_MODE = 'dashboard'; 
+   bash .\entrypoint.sh
    ```
 
 ---
