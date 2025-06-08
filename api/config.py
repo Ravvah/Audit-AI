@@ -1,6 +1,3 @@
-"""
-API configuration settings
-"""
 import os
 from pydantic import Field
 from pydantic_settings import BaseSettings
@@ -44,7 +41,3 @@ class Settings(BaseSettings):
         case_sensitive = True
         env_file = ".env"
         env_file_encoding = "utf-8"
-
-
-# Create settings instance
-settings = Settings()
