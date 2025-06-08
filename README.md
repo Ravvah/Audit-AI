@@ -23,9 +23,6 @@ AuditAI/
 ├── api/            # FastAPI service and Pydantic schemas
 ├── audit_core/     # back-end for metrics, detection, middleware
 ├── dashboard/      # Streamlit app and style components
-├── setup.py        # Editable package install
-├── Dockerfile    # Docker definitions for API and Dashboard
-└── Makefile        # Build, run, and test targets
 ```
 
 ---
