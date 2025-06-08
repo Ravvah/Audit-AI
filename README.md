@@ -5,10 +5,9 @@
 AuditAI provides end-to-end observability for large language models (LLMs) running on Ollama. It audits model inferences, tracks performance and quality metrics, and detects drift and hallucinations in real time. The platform consists of:
 
 - A FastAPI inference API (proxying to Ollama) that returns completions and structured observability data.
-- A Streamlit dashboard for visualizing metrics, trends, and alerts.
+- A Streamlit dashboard for visualizing metrics, trends, and alerts. The css style was particulary ai generated
 - A back-end core (`audit_core`) for detection, logging, and metrics.
 - Docker and Makefile support for local or containerized deployment.
-
 ---
 
 ## Architecture
