@@ -109,7 +109,7 @@ AuditAI/
 
 ## Metrics & Experimental Status
 
-AuditAI’s metrics (latency, token counts, hallucination, drift, etc.) are experimental and designed for rapid iteration. See `METRICS.md` for details, limitations, and guidance on extending or tuning the observability stack.
+AuditAI’s metrics (latency, token counts, hallucination, drift, etc.) are experimental and designed for rapid iteration. See `METRICS.md` and `CHARTS.md` for details, limitations, and guidance on extending or tuning the observability stack.
 
 ---
 
