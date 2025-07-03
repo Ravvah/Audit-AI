@@ -1,6 +1,8 @@
-# AuditAI
+# AuditAI : **LLM Observability Platform for Ollama-based Inference**
 
-**LLM Observability Platform for Ollama-based Inference**
+![image](https://github.com/user-attachments/assets/e8287afe-eab3-4161-a9f1-e358063d568b)
+
+
 
 AuditAI provides end-to-end observability for large language models (LLMs) running on Ollama. It audits model inferences, tracks performance and quality metrics, and detects drift and hallucinations in real time. The platform consists of:
 
